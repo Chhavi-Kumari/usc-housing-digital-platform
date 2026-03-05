@@ -19,15 +19,7 @@ To protect 50K users, I identified and mitigated three core risks:
 * **Verification:** Developed a logic flow for "University Status" API checks.
 
 ## 3. Cross-Functional Execution Flow
-```mermaid
-graph LR
-    A[Stakeholder Needs] --> B{TPM / Roadmap}
-    B --> C[Design Team: UI/UX]
-    B --> D[Analytics: KPI Tracking]
-    B --> E[Operations: Deployment]
-    C & D & E --> F[50K User Platform Launch]
 
-## 3. Cross-Functional Execution Flow
 ```mermaid
 graph LR
     A[Stakeholder Needs] --> B{TPM / Roadmap}
