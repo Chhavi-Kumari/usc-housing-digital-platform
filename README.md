@@ -1,29 +1,37 @@
-# usc-housing-digital-platform
-Program Management framework for a 50K-user university housing platform
-**Role:** Technical Program Manager | **Scale:** 50,000+ Users
+# USC Housing Digital Platform Initiative
+**Role:** Technical Program Manager / Lead Analyst | **Project Budget:** $263,984
 
-## 1. Project Roadmap & Milestones
-Managed the end-to-end lifecycle from stakeholder alignment to launch readiness.
+## 1. Executive Summary
+Lead the strategic planning and lifecycle management of a mobile application designed to streamline the housing process for 50,000+ USC students. This initiative focused on centralizing housing reviews, roommate matching, and a student-to-student marketplace.
 
-| Milestone | Deliverables | Status |
+## 2. Technical Roadmap & Project Milestones
+I managed the transition from initial discovery to a revised scope, handling a significant mid-project pivot.
+
+| Phase | Key Deliverables | Status |
 | :--- | :--- | :--- |
-| **Q1: Discovery** | Stakeholder Requirements, Feature Prioritization | Completed |
-| **Q2: Design & Dev** | UX Wireframes, Backend Schema, Sprint Planning | Completed |
-| **Q3: Risk & Security** | Fraud Prevention & Verification Protocols | Completed |
-| **Q4: Launch** | Beta Testing, KPI Monitoring, 50K User Rollout | Completed |
+| **Discovery** | Stakeholder Surveys, User Requirements, Market Analysis | Completed |
+| **Design** | Database Architecture, UI/UX Wireframes, Resource Planning | Completed |
+| **Development** | Roommate Matching Logic, Marketplace Integration | Completed |
+| **Deployment** | App Store Compliance, Post-Rollout Maintenance Plan | Completed |
 
-## 2. Risk Mitigation Framework
-To protect 50K users, I identified and mitigated three core risks:
-* **Privacy:** Implemented data encryption standards for student records.
-* **Fraud:** Integrated multi-factor authentication for housing applications.
-* **Verification:** Developed a logic flow for "University Status" API checks.
+## 3. Project Governance & Scope Management
+A key highlight of this project was managing a **$76,836 budget increase** and a **2-month timeline extension**. I successfully reallocated resources from Marketing and R&D to cover engineering hours, ensuring project continuity.
 
-## 3. Cross-Functional Execution Flow
+### Risk Register & Mitigation
+| Risk Category | Potential Impact | Mitigation Strategy |
+| :--- | :--- | :--- |
+| **Data Privacy** | Student identity exposure | Implemented strict student database verification protocols. |
+| **Financial** | Budget overruns ($76k+) | Eliminated Legal Supervisor role; pivoted to internal USC Transportation SMEs. |
+| **Technical** | Navigation inaccuracies | Integrated USC-specific parking and transportation data. |
+
+## 4. Operational Flow
+This diagram illustrates how I coordinated cross-functional teams to manage the platform's core services:
 
 ```mermaid
-graph LR
-    A[Stakeholder Needs] --> B{TPM / Roadmap}
-    B --> C[Design Team: UI/UX]
-    B --> D[Analytics: KPI Tracking]
-    B --> E[Operations: Deployment]
-    C & D & E --> F[50K User Platform Launch]
+graph TD
+    A[Student Profile] --> B{Verification API}
+    B -->|Verified| C[Housing Reviews]
+    B -->|Verified| D[Roommate Matcher]
+    B -->|Verified| E[Student Marketplace]
+    E --> F[Automated Fraud Detection]
+    C & D & F --> G[Data Analytics Dashboard]
