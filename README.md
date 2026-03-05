@@ -27,9 +27,11 @@ graph LR
     B --> E[Operations: Deployment]
     C & D & E --> F[50K User Platform Launch]
 
-## 4. KPI Tracking Framework
-```markdown
-I designed the following metrics to monitor post-launch performance:
-* **Adoption Rate:** % of students who completed a profile within 48 hours.
-* **Engagement:** Daily Active Users (DAU) during peak housing cycles.
-* **Operational Efficiency:** Reduction in manual support tickets regarding housing status.
+## 3. Cross-Functional Execution Flow
+```mermaid
+graph LR
+    A[Stakeholder Needs] --> B{TPM / Roadmap}
+    B --> C[Design Team: UI/UX]
+    B --> D[Analytics: KPI Tracking]
+    B --> E[Operations: Deployment]
+    C & D & E --> F[50K User Platform Launch]
